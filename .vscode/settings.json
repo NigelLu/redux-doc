@@ -1,0 +1,5 @@
+{
+    // Number of spaces it should use per tab
+	"prettier.tabWidth": 4,
+    "editor.tabSize": 4,
+}
