@@ -18,7 +18,8 @@ export const counterSlice = createSlice({
     },
 });
 
-console.log(Object.keys(counterSlice));
+// * functions that generate the corresponding action object
+// * e.g., { type: 'increment', payload: undefined }
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 
 export default counterSlice.reducer;
