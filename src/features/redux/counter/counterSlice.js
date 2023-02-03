@@ -18,6 +18,13 @@ export const counterSlice = createSlice({
     },
 });
 
+export const asyncIncrement = () => (dispatch, getState) => {
+    setTimeout(() => {
+        dispatch(increment());
+        console.log("After state: ", getState());
+    }, 1000);
+};
+
 // * functions that generate the corresponding action object
 // * e.g., { type: 'increment', payload: undefined }
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
